@@ -6,11 +6,6 @@ type Webhook struct {
 	Targets          map[string]Target `yaml:"targets" default:"{}"`
 }
 
-type Group struct {
-	GroupName    string
-	GroupColumns []string
-}
-
 type Target struct {
 	Template string `yaml:"template" default:"template.tpl"`
 	API      string
